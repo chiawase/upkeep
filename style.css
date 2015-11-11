@@ -103,13 +103,22 @@ nav {
 		background-color: #04afa9;
 	}
 
-	#about-upkeep {
+	#about-upkeep, #video {
 		background-color: rgba(255,200,3,0.75);
+	}
+
+	#video {
+		height: 100vh;
 	}
 
 	#overview {
 		background-color: rgba(123, 211, 210, 0.75);
 		height: 100vh;
+	}
+
+	#about-company {
+		background-color: rgba(238, 92, 33, 0.75);
+		overflow: hidden;
 	}
 
 .main-image {
@@ -123,21 +132,21 @@ nav {
 		margin-left: 12.5%;
 	}
 
-	#home .cellphone,
-	#home .kip {
-		position: absolute;
-	}
+		#home .cellphone,
+		#home .kip {
+			position: absolute;
+		}
 
-	#home .cellphone {
-		width: 13.25em;
-	}
+		#home .cellphone {
+			width: 13.25em;
+		}
 
-	#home .kip {
-		z-index: 2;
-		bottom: 0;
-		left: 35%;
-		width: 15em;
-	}
+		#home .kip {
+			z-index: 2;
+			bottom: 0;
+			left: 35%;
+			width: 15em;
+		}
 
 	#about-upkeep .main-image {
 		position: absolute;
@@ -145,28 +154,47 @@ nav {
 		bottom: 0;
 	}
 
-	#about-upkeep .kip {
-				-ms-transform: rotate(15deg);
-		-webkit-transform: rotate(15deg);
-						transform: rotate(15deg);
-	}
+		#about-upkeep .kip {
+					-ms-transform: rotate(15deg);
+			-webkit-transform: rotate(15deg);
+							transform: rotate(15deg);
+		}
 
+	#video .main-image,
 	#overview .main-image {
 		margin: 2% auto;
 	}
 
-	#overview .cellphone {
-		width: 14em;
+	#video .main-image {
+		width: 75%;
 	}
 
-	#overview .kip {
+		#video .embed {
+			display: block;
+			margin: 5% auto;
+		}
+
+		#video .kip {
+			position: absolute;
+			right: -19em;
+			width: 20em;
+			top: 25%;
+					-ms-transform: rotate(-37deg);
+			-webkit-transform: rotate(-37deg);
+							transform: rotate(-37deg);
+		}	
+
+		#overview .cellphone {
+			width: 14em;
+		}
+
+	#about-company .kip {
 		position: absolute;
-		right: -19em;
-		width: 20em;
-		top: 25%;
-				-ms-transform: rotate(-37deg);
-		-webkit-transform: rotate(-37deg);
-						transform: rotate(-37deg);
+		bottom: -30%;
+		left: 5em;
+				-ms-transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+						transform: rotate(-5deg);
 	}
 
 .main-text {
@@ -183,7 +211,6 @@ nav {
 		font-size: 1.5em;
 	}
 
-	/* For about-upkeep.html ONLY */
 	#about-upkeep .main-text {
 		align-self: flex-start;
 		color: #000;
@@ -192,14 +219,19 @@ nav {
 		margin-right: 0;
 	}
 
-	#about-upkeep .main-text p {
-		font-size: 1.25em;
-	}
+		#about-upkeep .main-text p {
+			font-size: 1.25em;
+		}
 
 	#overview .main-text {
 		font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 		color: #000;
 		font-size: 1em;
+	}
+
+	#about-company .main-text {
+		align-self: flex-start;
+		margin: auto;
 	}
 
 .button {
@@ -217,7 +249,7 @@ nav {
 	}
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 3.5%;
 	right: 1.5%;
 	width: 17.5%;
