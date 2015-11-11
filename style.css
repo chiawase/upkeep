@@ -74,3 +74,25 @@ nav {
 	top: 0;
 	left: 0;
 }
+
+footer {
+	position: fixed;
+	bottom: 3.5%;
+	right: 1.5%;
+	width: 15%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+	
+	footer a {
+		display: block;
+		background-color: #fff;
+		color: #04afa9;
+		padding: 10px;
+		width: 1.25em;
+		height: 1.25em;
+		text-align: center;
+		font-size: 1.5rem;
+		border-radius: 50%;
+	}
