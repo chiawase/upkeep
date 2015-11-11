@@ -121,6 +121,11 @@ nav {
 		overflow: hidden;
 	}
 
+	#contact {
+		background-color: #f1e8e8;
+		align-content: center;
+	}
+
 .main-image {
 	position: relative;
 }
@@ -197,6 +202,18 @@ nav {
 						transform: rotate(-5deg);
 	}
 
+	#contact .main-image {
+		width: 90%;
+		height: calc(100vh - 64px);
+	}
+
+		#contact .kip {
+			position: absolute;
+			bottom: 0;
+			left: 7.5em;
+			width: 27em;
+		}
+
 .main-text {
 	align-self: center;
 	text-align: center;
@@ -233,6 +250,28 @@ nav {
 		align-self: flex-start;
 		margin: auto;
 	}
+
+	#contact .main-text {
+		width: 80em;
+		margin-right: 10%;
+	}
+
+		#contact .main-text p {
+			font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+			color: #04afa9;
+			font-size: 2em;
+			width: auto;
+		}
+
+		#contact .main-text .links a {
+			text-decoration: none;
+			color: #ed5b20;
+			font-size: 1.75em;
+		}
+
+			#contact .main-text .links a:hover {
+				color: #ffc803;
+			}
 
 .button {
 	padding: 10px 15px;
