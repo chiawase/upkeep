@@ -65,13 +65,15 @@ nav {
 	}
 
 	.navbar li:hover,
-	.navbar li:active {
+	.navbar li:active,
+	.navbar li.active {
 		margin: 1em 1.2em;
 	}
 
 	.navbar a:hover,
-	.navbar a:active {
-		font-weight: bold;
+	.navbar a:active,
+	.navbar li.active a {
+		font-weight: 600;
 	}
 
 .corner {
@@ -105,8 +107,8 @@ nav {
 	.kip {
 		z-index: 2;
 		bottom: 0;
-		left: 30%;
-		width: 14em;
+		left: 35%;
+		width: 15em;
 	}
 
 .main-text {
@@ -119,8 +121,21 @@ nav {
 	
 	.main-text p {
 		width: 90%;
-		margin: 0 auto;
+		margin: 0 auto 2.5%;
 		font-size: 1.5em;
+	}
+
+.button {
+	padding: 10px 15px;
+	background-color: #ed5b20;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	border-radius: 10px;
+}
+
+	.button:hover {
+		background-color: #ffc803;
 	}
 
 footer {
@@ -143,4 +158,9 @@ footer {
 		text-align: center;
 		font-size: 1.5rem;
 		border-radius: 50%;
+	}
+
+	footer a:hover {
+		background-color: #a6a6a6;
+		color: #fff;
 	}
