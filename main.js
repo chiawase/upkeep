@@ -9,9 +9,17 @@ $(document).ready( function() {
 		}, 600, 'swing', function() {
 			window.location.hash = target;
 		});
+	});
 
-		// $('footer').animate({
-		// 	bottom: '-11.5%'
-		// }, 600, 'swing');
+	var footer = $('footer').offset().top;
+	$(window).scroll(function () {
+		var temp = $(window).scrollTop();
+		if (temp > footer) {
+			$('footer').addClass('sticky');
+			$('#video .kip').addClass('sticky');
+		} else {
+			$('footer').removeClass('sticky');
+			$('#video .kip').removeClass('sticky');
+		}
 	});
 });

@@ -187,7 +187,13 @@ nav {
 					-ms-transform: rotate(-37deg);
 			-webkit-transform: rotate(-37deg);
 							transform: rotate(-37deg);
-		}	
+		}
+
+		#video .kip.sticky {
+			position: fixed;
+			right: -8.5em;
+			top: 30%;
+		}
 
 		#overview .cellphone {
 			width: 14em;
@@ -232,8 +238,7 @@ nav {
 		align-self: flex-start;
 		color: #000;
 		font-size: 1.15em;
-		margin-top: 7.5%;
-		margin-right: 0;
+		margin: 6.5% auto 0;
 	}
 
 		#about-upkeep .main-text p {
@@ -288,8 +293,9 @@ nav {
 	}
 
 footer {
-	position: fixed;
+	position: absolute;
 	bottom: 3.5%;
+	top: inherit;
 	right: 1.5%;
 	width: 17.5%;
 	display: flex;
@@ -309,4 +315,11 @@ footer {
 
 	footer a:hover {
 		color: #a6a6a6;
+	}
+
+	footer.sticky {
+		position: fixed;
+		bottom: inherit;
+		top: 3.5%;
+		z-index: 100;
 	}
